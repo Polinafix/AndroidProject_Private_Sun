@@ -1,6 +1,7 @@
 package com.example.android.privatesun1;
 
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -28,6 +29,15 @@ public class MainActivity extends AppCompatActivity {
         initNavigationDrawer();
 
 
+
+
+    }
+
+    public void openGridView(View view) {
+        // Do something in response to button
+        Intent intent = new Intent(this, Detailed_Menu.class);
+        startActivity(intent);
+
     }
 
     @Override
@@ -46,19 +56,22 @@ public class MainActivity extends AppCompatActivity {
                 int id = menuItem.getItemId();
 
                 switch (id){
-                    case R.id.home:
-                        Toast.makeText(getApplicationContext(),"Home",Toast.LENGTH_SHORT).show();
+                    case R.id.shop:
+                        Toast.makeText(getApplicationContext(),"Shop",Toast.LENGTH_SHORT).show();
                         drawerLayout.closeDrawers();
                         break;
-                    case R.id.settings:
-                        Toast.makeText(getApplicationContext(),"Settings",Toast.LENGTH_SHORT).show();
+                    case R.id.favs:
+                        Toast.makeText(getApplicationContext(),"Favourites",Toast.LENGTH_SHORT).show();
                         break;
-                    case R.id.trash:
-                        Toast.makeText(getApplicationContext(),"Trash",Toast.LENGTH_SHORT).show();
+                    case R.id.about:
+                        Toast.makeText(getApplicationContext(),"About Us",Toast.LENGTH_SHORT).show();
                         drawerLayout.closeDrawers();
                         break;
-                    case R.id.logout:
-                        finish();
+                    case R.id.contact:
+                        Toast.makeText(getApplicationContext(),"Contact Us",Toast.LENGTH_SHORT).show();
+                        drawerLayout.closeDrawers();
+                        break;
+
 
                 }
                 return true;
