@@ -13,6 +13,7 @@ import android.widget.BaseAdapter;
 import android.widget.FrameLayout;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class Detailed_Menu extends AppCompatActivity {
@@ -38,7 +39,7 @@ public class Detailed_Menu extends AppCompatActivity {
                 intent.putExtra("ItemDescription", selectedItem.getLongDescription());
                 //intent.putExtra("ItemIcon", Wine.getIconResource(selectedWine.getType()));
                 intent.putExtra("ItemIcon", selectedItem.getImageResource());
-                //intent.putExtra("ItemPrice", selectedItem.getPrice());
+                intent.putExtra("ItemPrice", selectedItem.getPrice());
                 //Start details activity
                 startActivity(intent);
             }
@@ -119,7 +120,7 @@ public class Detailed_Menu extends AppCompatActivity {
             final TextView priceTextView = (TextView)convertView.findViewById(R.id.textview_item_price);
             final ImageView imageViewFavorite = (ImageView)convertView.findViewById(R.id.imageview_favorite);*/
 
-            holder.icon.setLayoutParams(new FrameLayout.LayoutParams(200, 300));
+            holder.icon.setLayoutParams(new LinearLayout.LayoutParams(250, 350));
             holder.icon.setScaleType(ImageView.ScaleType.CENTER_CROP);
             holder.icon.setPadding(8, 8, 8, 8);
 

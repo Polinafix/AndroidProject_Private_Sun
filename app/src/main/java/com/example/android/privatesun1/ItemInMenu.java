@@ -10,7 +10,7 @@ public class ItemInMenu {
     private int price;
     private int imageResource;
     private int longDescription;
-    private boolean isFavorite = false;
+
 
     public ItemInMenu(int name, int price, int imageResource, int longDescription) {
         this.name = name;
@@ -39,16 +39,7 @@ public class ItemInMenu {
     }
 
 
-    public boolean getIsFavorite() {
-        return isFavorite;
-    }
-    public void setIsFavorite(boolean isFavorite) {
-        this.isFavorite = isFavorite;
-    }
 
-    public void toggleFavorite() {
-        isFavorite = !isFavorite;
-    }
 
 
 }

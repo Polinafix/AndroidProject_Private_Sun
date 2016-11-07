@@ -3,9 +3,12 @@ package com.example.android.privatesun1;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
+import android.widget.Toast;
+import android.widget.ToggleButton;
 
 public class Larger_Picture extends AppCompatActivity {
 
@@ -16,8 +19,9 @@ public class Larger_Picture extends AppCompatActivity {
 
         Intent intent = getIntent();
         if (intent != null) {
-            TextView name = (TextView) findViewById(R.id.text1);
-            TextView description = (TextView) findViewById(R.id.text2);
+            TextView name = (TextView) findViewById(R.id.itemname);
+            TextView description = (TextView) findViewById(R.id.description);
+            TextView price = (TextView) findViewById(R.id.price);
             ImageView icon = (ImageView) findViewById(R.id.image);
 
             int intName = intent.getIntExtra("ItemName", 0);
@@ -29,11 +33,22 @@ public class Larger_Picture extends AppCompatActivity {
             int intIcon = intent.getIntExtra("ItemIcon", 0);
             icon.setImageResource(intIcon);
 
+            int intPrice = intent.getIntExtra("ItemPrice", 0);
+            price.setText(intPrice);
+
 
             //name.setText(intent.getCharSequenceExtra("ItemName"));
            // description.setText(intent.getCharSequenceExtra("ItemDescription"));
            // icon.setImageResource(intent.getIntExtra("ItemIcon"));
 
         }
+
+
     }
+
+
 }
+
+
+
+
