@@ -18,7 +18,8 @@
         <activity android:name=".Shopping_cart" />
         <activity android:name=".Detailed_Menu" />
         <activity android:name=".Larger_Picture" />
-        <activity android:name=".ShoppingCart"></activity>
+        <activity android:name=".ShoppingCart" />
+        <activity android:name=".ProceedOrder"></activity>
     </application>
 
 </manifest>

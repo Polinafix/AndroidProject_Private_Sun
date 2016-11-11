@@ -34,4 +34,15 @@
         android:textSize="14sp"
         tools:text="$120" />
 
-</LinearLayout>
+    <CheckBox
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:id="@+id/CheckBoxSelected"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"></CheckBox>
+
+
+
+    </LinearLayout>

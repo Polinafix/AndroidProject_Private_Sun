@@ -10,6 +10,7 @@ public class ItemInMenu {
     private int price;
     private int imageResource;
     private int longDescription;
+    public boolean selected;
 
 
     public ItemInMenu(int name, int price, int imageResource, int longDescription) {
@@ -36,6 +37,14 @@ public class ItemInMenu {
     }
     public void setLongDescription(int longDescription) {
         this.longDescription = longDescription;
+    }
+
+    public boolean isSelected() {
+        return selected;
+    }
+
+    public void setSelected() {
+        this.selected = selected;
     }
 
 

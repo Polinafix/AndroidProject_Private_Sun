@@ -33,6 +33,12 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /*public void takeToCart(Menu menu){
+        Intent intent = new Intent(this, ShoppingCart.class);
+        startActivity(intent);
+
+    }*/
+
     public void openGridView(View view) {
         // Do something in response to button
         Intent intent = new Intent(this, Detailed_Menu.class);
@@ -46,6 +52,16 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.menu_cart) {
+            //Create Intent for Shopping Cart Activity
+            Intent productIntent = new Intent(this, ShoppingCart.class);
+            startActivity(productIntent);
+            return true;
+        }return super.onOptionsItemSelected(item);
+    }
+
     public void initNavigationDrawer() {
 
         NavigationView navigationView = (NavigationView)findViewById(R.id.navigation_view);
@@ -57,7 +73,9 @@ public class MainActivity extends AppCompatActivity {
 
                 switch (id){
                     case R.id.shop:
-                        Toast.makeText(getApplicationContext(),"Shop",Toast.LENGTH_SHORT).show();
+                        //Intent intent = new Intent(MainActivity.this,MainActivity.class);
+                        //startActivity(intent);
+                       // Toast.makeText(getApplicationContext(),"Shop",Toast.LENGTH_SHORT).show();
                         drawerLayout.closeDrawers();
                         break;
                     case R.id.favs:
