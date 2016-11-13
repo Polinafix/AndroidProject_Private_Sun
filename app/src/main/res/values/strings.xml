@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Private Sun</string>
+    <string name="app_name">Private Sun 2</string>
     <string name="action_settings">Settings</string>
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
@@ -10,7 +10,10 @@
     <string name="Tom_Boy_01_42">Tom Boy CO-01-42</string>
     <string name="Tom_Boy_01_41">Tom Boy CO-01-41</string>
     <string name="Black_Jeans_Coat">Black Jeans Coat</string>
+    <string name="White_Shirt">White Shirt CH-01-03</string>
+    <string name="Basic_Shirt">Dasic Shirt SH-07-01</string>
     <string name="Khaki_Jeans_Coat">Khaki Jeans Coat</string>
+
 
     <string name="Tokyo_Coat_About">Long coat Tokyo made of 90% wool. The product has a deflated armhole and two side pockets</string>
     <string name="New_York_Coat_About">Wool straight coat with cuts on the sleeves. The coat is made of 90% wool, which is ideal for basic demiseason wardrobe (some of our customers wear them all winter with a warm sweater) combined with shoes or sneakers.</string>
@@ -18,6 +21,8 @@
     <string name="Tom_Boy_01_41_About">Wool coat with oversized-silhouette, as if of "a man's shoulder." Model with dropped armholes and two patch pockets fastens with three metal buttons. Ideal for basic demiseason wardrobe (some of our customers wear them all winter with a warm sweater) combined with shoes or sneakers.</string>
     <string name="Black_Jeans_Coat_About">Denim Jacket, perhaps, must-have of the coming season. Comfortable to wear, stylish and versatile denim jacket will create a variety of styles. The jacket can be worn with jeans, dresses and culottes.</string>
     <string name="Khaki_Jeans_Coat_About">Denim Jacket, perhaps, must-have of the coming season. Comfortable to wear, stylish and versatile denim jacket will create a variety of styles. The jacket can be worn with jeans, dresses and culottes.</string>
+    <string name="Basic_Shirt_About">Denim Jacket, perhaps, must-have of the coming season. Comfortable to wear, stylish and versatile denim jacket will create a variety of styles. The jacket can be worn with jeans, dresses and culottes.</string>
+    <string name="White_Shirt_About">Denim Jacket, perhaps, must-have of the coming season. Comfortable to wear, stylish and versatile denim jacket will create a variety of styles. The jacket can be worn with jeans, dresses and culottes.</string>
 
 
     <string name="Price_110">$110</string>

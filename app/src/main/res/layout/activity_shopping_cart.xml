@@ -15,6 +15,7 @@
         android:textSize="24dip"
         android:layout_margin="5dip"
         android:layout_marginBottom="20dp"
+        android:layout_marginTop="70dp"
         android:text="Shopping Cart"></customfonts.MyTextView>
 
     <LinearLayout

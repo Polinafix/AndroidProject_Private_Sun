@@ -2,16 +2,19 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/shop"
-            android:title="Shop" />
+            android:id="@+id/categories"
+            android:title="Categories" />
         <item
             android:id="@+id/favs"
             android:title="Favourites" />
         <item
+            android:id="@+id/scart"
+            android:title="Shopping Cart" />
+        <item
             android:id="@+id/about"
             android:title="About Us" />
         <item
-            android:id="@+id/contact"
-            android:title="Contact us" />
+            android:id="@+id/location"
+            android:title="Our Location" />
     </group>
 </menu>

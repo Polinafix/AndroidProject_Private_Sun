@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.android.privatesun1">
+    package="com.example.android.privatesun2">
 
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
@@ -15,11 +17,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Shopping_cart" />
+        <activity android:name=".Shopping_Cart" />
         <activity android:name=".Detailed_Menu" />
         <activity android:name=".Larger_Picture" />
         <activity android:name=".ShoppingCart" />
-        <activity android:name=".ProceedOrder"></activity>
+        <activity android:name=".ProceedOrder" />
+        <activity android:name=".NavigationDrawerActivity"></activity>
     </application>
 
 </manifest>

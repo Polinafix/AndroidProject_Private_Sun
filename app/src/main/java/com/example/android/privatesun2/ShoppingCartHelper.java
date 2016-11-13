@@ -1,4 +1,4 @@
-package com.example.android.privatesun1;
+package com.example.android.privatesun2;
 
 import android.content.res.Resources;
 
@@ -25,6 +25,16 @@ public class ShoppingCartHelper {//added
             catalog.add(new ItemInMenu(R.string.Tom_Boy_01_42, 130, R.drawable.out3, R.string.Tom_Boy_01_42_About));
             catalog.add(new ItemInMenu(R.string.Black_Jeans_Coat, 120, R.drawable.out6, R.string.Black_Jeans_Coat_About));
             catalog.add(new ItemInMenu(R.string.Khaki_Jeans_Coat, 120, R.drawable.out5, R.string.Khaki_Jeans_Coat_About));
+        }
+
+        return catalog;
+    }
+
+    public static List<ItemInMenu> getCatalog1(Resources res){
+        if(catalog == null) {
+            catalog = new Vector<ItemInMenu>();
+            catalog.add(new ItemInMenu(R.string.Basic_Shirt, 110, R.drawable.top1, R.string.Basic_Shirt_About));
+            catalog.add(new ItemInMenu(R.string.White_Shirt, 120, R.drawable.top2, R.string.White_Shirt_About));
         }
 
         return catalog;

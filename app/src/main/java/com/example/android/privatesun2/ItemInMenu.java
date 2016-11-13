@@ -1,6 +1,4 @@
-package com.example.android.privatesun1;
-
-import android.graphics.Bitmap;
+package com.example.android.privatesun2;
 
 /**
  * Created by polinafiksson on 04/11/16.

@@ -1,4 +1,4 @@
-package com.example.android.privatesun1;
+package com.example.android.privatesun2;
 
 import android.content.Intent;
 import android.net.Uri;
