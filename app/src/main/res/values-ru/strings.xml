@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">Private Sun</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="detail">Detail</string>
+
+    <string name="category">Категории</string>
+    <string name="favorites">Избранное</string>
+    <string name="shopping_cart">Корзина</string>
+    <string name="about_us">О нас</string>
+    <string name="our_location">Наш магазин</string>
+
+
+    <string name="outwear">Пальто и  \n куртки</string>
+    <string name="dresses">Платья</string>
+    <string name="tops">Топы</string>
+    <string name="bottoms">Брюки</string>
+
+    <string name="add_to_cart">Добавить в корзину</string>
+    <string name="remove_from_cart">Удалить</string>
+    <string name="size">Размер: </string>
+    <string name="proceed">Перейти к оплате</string>
+    <string name="subtotal">Итого: $ </string>
+
+    <string name="order">Итоговая сумма</string>
+    <string name="total">Итоговая сумма</string>
+    <string name="name">ИМЯ</string>
+    <string name="full_name">Ваше имя и фамилия </string>
+    <string name="adr1">АДРЕСС 1</string>
+    <string name="adr2">АДРЕСС 2</string>
+    <string name="city">ГОРОД</string>
+    <string name="state">ШТАТ</string>
+    <string name="zip">ИНДЕКС</string>
+    <string name="country">СТРАНА</string>
+    <string name="comment">КОММЕНТАРИЙ</string>
+    <string name="submit">ОПЛАТИТЬ НАЛИЧНЫМИ</string>
+
+
+    <string name="Tokyo_Coat">Пальто Tokyo</string>
+    <string name="New_York_Coat">Пальто New York Coat</string>
+    <string name="Tom_Boy_01_42">Пальто Tom Boy CO-01-42</string>
+    <string name="Tom_Boy_01_41">Пальто Tom Boy CO-01-41</string>
+    <string name="Black_Jeans_Coat">Черная джинсовая куртка</string>
+    <string name="Khaki_Jeans_Coat">Куртка джинсовая камуфляж</string>
+
+
+    <string name="White_Shirt">White Shirt CH-01-03</string>
+    <string name="Basic_Shirt">Basic Shirt SH-07-01</string>
+    <string name="Pullover_01">Pullover KT-03-01</string>
+    <string name="Pullover_04">Pullover KT-03-04</string>
+
+
+    <string name="Warm_Dress">Warm Svitshot-Dress with black lace</string>
+    <string name="Lace_Dress">Velvet Dress-combination with lace</string>
+
+    <string name="Tulle_Skirt">Tulle Skirt </string>
+    <string name="Olive_culottes">Olive Culottes</string>
+    <string name="Khaki_Jeans">Khaki-Jeans</string>
+
+
+    <string name="Tokyo_Coat_About">Длинное пальто Tokyo из 90% шерсти. Изделие имеет спущенную пройму, два боковых кармана</string>
+    <string name="New_York_Coat_About">Шерстяное пальто прямого кроя Private Sun с разрезами на рукавах. Пальто выполнено из 90% шерсти, что идеально подходит для базового демисезонного гардероба (некоторые наши клиенты носят их и всю зиму с тёплым свитером) в сочетании с ботинками, кроссовками или кедами.
+Модель c двумя основными и одним нагрудным карманами застегивается на три пуговицы.</string>
+    <string name="Tom_Boy_01_42_About">Шерстяное пальто oversized-силуэта Private Sun, будто бы "с мужского плеча". Модель со спущенной проймой и двумя накладными карманами застегивается на три металлические кнопки, соответвующие цвету основного материала. Идеально подходит для базового демисезонного гардероба (некоторые наши клиенты носят их и всю зиму с тёплым свитером) в сочетании с ботинками, кроссовками или кедами.</string>
+    <string name="Tom_Boy_01_41_About"> Шерстяное пальто oversized-силуэта Private Sun, будто бы "с мужского плеча". Модель со спущенной проймой и двумя накладными карманами застегивается на три металлические кнопки, соответвующие цвету основного материала. Идеально подходит для базового демисезонного гардероба (некоторые наши клиенты носят их и всю зиму с тёплым свитером) в сочетании с ботинками, кроссовками или кедами.</string>
+    <string name="Black_Jeans_Coat_About">Джинсовая куртка Private Sun, пожалуй, must-have наступившего сезона. Комфортная в носке, стильная и универсальная джинсовая куртка позволит создавать самые разные образы. Куртка может носиться с платьями- комбинациями, джинсами, футлярными платьями и даже кюлотами.</string>
+    <string name="Khaki_Jeans_Coat_About">Джинсовая куртка Private Sun, пожалуй, must-have наступившего сезона. Комфортная в носке, стильная и универсальная джинсовая куртка позволит создавать самые разные образы. Куртка может носиться с платьями- комбинациями, джинсами, футлярными платьями и даже кюлотами.</string>
+
+    <string name="Basic_Shirt_About">A laconic base shirt of straight cut is an essential thing to have in  any wardrobe. 100 % cotton.</string>
+    <string name="White_Shirt_About">A laconic white shirt of straight cut is an essential thing to have in  any wardrobe. 100 % cotton.</string>
+    <string name="Pullover_01_About">Soft cozy sweater made of wool mixture (merino with acrylic) with a V-neck will become a favorite item of your basic wardrobe. Comfortable composition and refined simplicity and brevity of this sweater will emphasize refinement of any look.</string>
+    <string name="Pullover_04_About">Soft cozy sweater made of cotton, with a V-neck will become a favorite item of your basic wardrobe. Comfortable composition and refined simplicity and brevity of this sweater will emphasize refinement of any look.</string>
+
+    <string name="Warm_dress_About">Universal clothes for every day, perfect for late autumn and winter.Can be combined with sneakers or boots. Made of cotton fleece of the highest quality, unpretentious to wear and care for. It will take a worthy place in your fall and winter wardrobe.</string>
+    <string name="Lace_dress_About">Luxurious, perfect velvet dress decorated with elegant Italian lace, always pertinent: for holiday and everyday wear. </string>
+
+    <string name="Tulle_skirt_About">Light, airy tulle skirt is an irreplaceable thing in the wardrobe of every girl. Soft and comfortable tulle, and the neutral color of the skirt will let you create a lot of different looks. </string>
+    <string name="Olive_culottes_About">Olive-colored Culottes made of 100% cotton. Excellent fit both with classic pumps and boots, and with rough boots and sneakers. </string>
+    <string name="Khaki_Jeans_About">Boyfriend Jeans aesthetics. </string>
+
+
+    <string name="Price_110">$110</string>
+    <string name="Price_120">$120</string>
+    <string name="Price_150">$150</string>
+    <string name="Price_130">$130</string>
+    <string name="Price_80">$80</string>
+    <string name="Price_75">$75</string>
+    <string name="Price_70">$70</string>
+    <string name="Price_65">$65</string>
+
+    <string name="sizeAll">S</string>
+
+
+</resources>

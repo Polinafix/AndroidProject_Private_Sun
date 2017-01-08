@@ -24,13 +24,27 @@ public class ShoppingCart extends AppCompatActivity {
 
         sCartList = ShoppingCartHelper.getCart();
 
-        //clear the existing selections
+        // Refresh the data
+        if (itemsAdapter != null) {
+            itemsAdapter.notifyDataSetChanged();
+        }
+
+        for (ItemInMenu p : sCartList) {
+            subTotal += p.getPrice();
+        }
+
+
+        TextView productPriceTextView = (TextView) findViewById(R.id.FinalPrice);
+        productPriceTextView.setText(String.valueOf(subTotal));
+
+
         for (int i = 0; i < sCartList.size(); i++) {
+            //clear the selections that already exist
             sCartList.get(i).selected = false;
 
             //create the list
             final ListView itemCatalog = (ListView) findViewById(R.id.itemCatalog);
-            itemsAdapter = new ItemsAdapter(sCartList, getLayoutInflater(), true);
+            itemsAdapter = new ItemsAdapter(sCartList, getLayoutInflater(), true, true);
             itemCatalog.setAdapter(itemsAdapter);
 
 
@@ -39,6 +53,7 @@ public class ShoppingCart extends AppCompatActivity {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position,
                                         long id) {
+
 
                     ItemInMenu selectedItem = sCartList.get(position);
                     if (selectedItem.selected == true) {
@@ -66,7 +81,7 @@ public class ShoppingCart extends AppCompatActivity {
                         }
                     }
                     TextView productPriceTextView = (TextView) findViewById(R.id.FinalPrice);
-                    productPriceTextView.setText("$" + subTotal);
+                    productPriceTextView.setText(String.valueOf(subTotal));
                     itemsAdapter.notifyDataSetChanged();
                 }
             });
@@ -88,21 +103,4 @@ public class ShoppingCart extends AppCompatActivity {
         }
     }
 
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-
-        // Refresh the data
-        if (itemsAdapter != null) {
-            itemsAdapter.notifyDataSetChanged();
-        }
-
-        for (ItemInMenu p : sCartList) {
-            subTotal += p.getPrice();
-        }
-
-        TextView productPriceTextView = (TextView) findViewById(R.id.FinalPrice);
-        productPriceTextView.setText("$" + subTotal);
-    }
 }

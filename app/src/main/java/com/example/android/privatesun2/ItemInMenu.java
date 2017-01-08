@@ -8,14 +8,16 @@ public class ItemInMenu {
     private int price;
     private int imageResource;
     private int longDescription;
+    private String size;
     public boolean selected;
 
 
-    public ItemInMenu(int name, int price, int imageResource, int longDescription) {
+    public ItemInMenu(int name, int price, int imageResource, int longDescription, String size) {
         this.name = name;
         this.price = price;
         this.imageResource = imageResource;
         this.longDescription = longDescription;
+        this.size = size;
     }
 
     public int getName() {
@@ -33,6 +35,7 @@ public class ItemInMenu {
     public int getLongDescription() {
         return longDescription;
     }
+
     public void setLongDescription(int longDescription) {
         this.longDescription = longDescription;
     }
@@ -45,8 +48,13 @@ public class ItemInMenu {
         this.selected = selected;
     }
 
+    public String getSize() {
+        return size;
+    }
 
-
+    public void setSize(String size) {
+        this.size = size;
+    }
 
 
 }

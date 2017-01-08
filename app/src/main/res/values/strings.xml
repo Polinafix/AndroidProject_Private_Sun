@@ -1,18 +1,62 @@
 <resources>
-    <string name="app_name">Private Sun 2</string>
+    <string name="app_name">Private Sun</string>
     <string name="action_settings">Settings</string>
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
     <string name="detail">Detail</string>
+
+    <string name="category">Categories</string>
+    <string name="favorites">My Favorites</string>
+    <string name="shopping_cart">Shopping Cart</string>
+    <string name="about_us">About Us</string>
+    <string name="our_location">Our Location</string>
+
+
+    <string name="outwear">Outwear</string>
+    <string name="dresses">Dresses</string>
+    <string name="tops">Tops</string>
+    <string name="bottoms">Bottoms</string>
+
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="remove_from_cart">Remove from Cart</string>
+    <string name="size">Size: </string>
+    <string name="proceed">Proceed to Checkout</string>
+    <string name="subtotal">Subtotal: $ </string>
+
+    <string name="order">Total Amount</string>
+    <string name="total">Total</string>
+    <string name="name">YOUR NAME</string>
+    <string name="full_name">Your first and last name</string>
+    <string name="adr1">ADDRESS LINE 1</string>
+    <string name="adr2">ADDRESS LINE 2</string>
+    <string name="city">CITY</string>
+    <string name="state">STATE</string>
+    <string name="zip">ZIP CODE</string>
+    <string name="country">COUNTRY</string>
+    <string name="comment">COMMENT</string>
+    <string name="submit">PAY WITH CASH</string>
+
 
     <string name="Tokyo_Coat">Tokyo Coat</string>
     <string name="New_York_Coat">New York Coat</string>
     <string name="Tom_Boy_01_42">Tom Boy CO-01-42</string>
     <string name="Tom_Boy_01_41">Tom Boy CO-01-41</string>
     <string name="Black_Jeans_Coat">Black Jeans Coat</string>
-    <string name="White_Shirt">White Shirt CH-01-03</string>
-    <string name="Basic_Shirt">Dasic Shirt SH-07-01</string>
     <string name="Khaki_Jeans_Coat">Khaki Jeans Coat</string>
+
+
+    <string name="White_Shirt">White Shirt CH-01-03</string>
+    <string name="Basic_Shirt">Basic Shirt SH-07-01</string>
+    <string name="Pullover_01">Pullover KT-03-01</string>
+    <string name="Pullover_04">Pullover KT-03-04</string>
+
+
+    <string name="Warm_Dress">Warm Svitshot-Dress with black lace</string>
+    <string name="Lace_Dress">Velvet Dress-combination with lace</string>
+
+    <string name="Tulle_Skirt">Tulle Skirt </string>
+    <string name="Olive_culottes">Olive Culottes</string>
+    <string name="Khaki_Jeans">Khaki-Jeans</string>
 
 
     <string name="Tokyo_Coat_About">Long coat Tokyo made of 90% wool. The product has a deflated armhole and two side pockets</string>
@@ -21,14 +65,30 @@
     <string name="Tom_Boy_01_41_About">Wool coat with oversized-silhouette, as if of "a man's shoulder." Model with dropped armholes and two patch pockets fastens with three metal buttons. Ideal for basic demiseason wardrobe (some of our customers wear them all winter with a warm sweater) combined with shoes or sneakers.</string>
     <string name="Black_Jeans_Coat_About">Denim Jacket, perhaps, must-have of the coming season. Comfortable to wear, stylish and versatile denim jacket will create a variety of styles. The jacket can be worn with jeans, dresses and culottes.</string>
     <string name="Khaki_Jeans_Coat_About">Denim Jacket, perhaps, must-have of the coming season. Comfortable to wear, stylish and versatile denim jacket will create a variety of styles. The jacket can be worn with jeans, dresses and culottes.</string>
-    <string name="Basic_Shirt_About">Denim Jacket, perhaps, must-have of the coming season. Comfortable to wear, stylish and versatile denim jacket will create a variety of styles. The jacket can be worn with jeans, dresses and culottes.</string>
-    <string name="White_Shirt_About">Denim Jacket, perhaps, must-have of the coming season. Comfortable to wear, stylish and versatile denim jacket will create a variety of styles. The jacket can be worn with jeans, dresses and culottes.</string>
+
+    <string name="Basic_Shirt_About">A laconic base shirt of straight cut is an essential thing to have in  any wardrobe. 100 % cotton.</string>
+    <string name="White_Shirt_About">A laconic white shirt of straight cut is an essential thing to have in  any wardrobe. 100 % cotton.</string>
+    <string name="Pullover_01_About">Soft cozy sweater made of wool mixture (merino with acrylic) with a V-neck will become a favorite item of your basic wardrobe. Comfortable composition and refined simplicity and brevity of this sweater will emphasize refinement of any look.</string>
+    <string name="Pullover_04_About">Soft cozy sweater made of cotton, with a V-neck will become a favorite item of your basic wardrobe. Comfortable composition and refined simplicity and brevity of this sweater will emphasize refinement of any look.</string>
+
+    <string name="Warm_dress_About">Universal clothes for every day, perfect for late autumn and winter.Can be combined with sneakers or boots. Made of cotton fleece of the highest quality, unpretentious to wear and care for. It will take a worthy place in your fall and winter wardrobe.</string>
+    <string name="Lace_dress_About">Luxurious, perfect velvet dress decorated with elegant Italian lace, always pertinent: for holiday and everyday wear. </string>
+
+    <string name="Tulle_skirt_About">Light, airy tulle skirt is an irreplaceable thing in the wardrobe of every girl. Soft and comfortable tulle, and the neutral color of the skirt will let you create a lot of different looks. </string>
+    <string name="Olive_culottes_About">Olive-colored Culottes made of 100% cotton. Excellent fit both with classic pumps and boots, and with rough boots and sneakers. </string>
+    <string name="Khaki_Jeans_About">Boyfriend Jeans aesthetics. </string>
 
 
     <string name="Price_110">$110</string>
     <string name="Price_120">$120</string>
     <string name="Price_150">$150</string>
     <string name="Price_130">$130</string>
+    <string name="Price_80">$80</string>
+    <string name="Price_75">$75</string>
+    <string name="Price_70">$70</string>
+    <string name="Price_65">$65</string>
+
+    <string name="sizeAll">S</string>
 
 
 </resources>

@@ -2,23 +2,22 @@ package com.example.android.privatesun2;
 
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
-import android.widget.ImageView;
-import android.widget.RatingBar;
-import android.widget.TextView;
+
 
 import java.util.List;
 
 
 public class Detailed_Menu extends NavigationDrawerActivity {
-    private static final String TAG = "RatingsActivity";
 
-    private List<ItemInMenu> mProductList;
+    public static final String NEW_KEY = "new_key";
+    private List<ItemInMenu> productList;
+    int n;
+    int k;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,28 +25,37 @@ public class Detailed_Menu extends NavigationDrawerActivity {
         setContentView(R.layout.activity_detailed__menu);
     }
 
-    //  int n = getIntent().getExtras().getInt(MainActivity.SOME_KEY);
-
 
     @Override
     protected void onStart() {
         super.onStart();
-        // The activity is about to become visible.
-        int n = getIntent().getIntExtra(MainActivity.SOME_KEY, -1);
+        //choosing the correspondind catalog (depending on which category was previously chosen)
+        n = getIntent().getIntExtra(MainActivity.SOME_KEY, -1);
 
-        if (n == 1) {
-            mProductList = ShoppingCartHelper.getCatalog(getResources());
+        switch (n) {
+            case 1:
+                productList = ShoppingCartHelper.getCatalog(getResources());
+                k = 1;
+                break;
+            case 2:
+                productList = ShoppingCartHelper.getCatalog3(getResources());
+                k = 2;
+                break;
+            case 3:
+                productList = ShoppingCartHelper.getCatalog2(getResources());
+                k = 3;
+                break;
 
-        }
-
-        if (n == 2) {
-            mProductList = ShoppingCartHelper.getCatalog1(getResources());
+            case 4:
+                productList = ShoppingCartHelper.getCatalog4(getResources());
+                k = 4;
+                break;
 
         }
 
 
         GridView gridView = (GridView) findViewById(R.id.gridview);
-        ItemsAdapter itemsAdapter = new ItemsAdapter(mProductList, getLayoutInflater(), false);
+        ItemsAdapter itemsAdapter = new ItemsAdapter(productList, getLayoutInflater(), false, false);
         gridView.setAdapter(itemsAdapter);
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -55,6 +63,23 @@ public class Detailed_Menu extends NavigationDrawerActivity {
 
                 Intent productLargerPicture = new Intent(Detailed_Menu.this, Larger_Picture.class);
                 productLargerPicture.putExtra(ShoppingCartHelper.PRODUCT_INDEX, position);
+
+                switch (k) {
+                    case 3:
+                        productLargerPicture.putExtra(NEW_KEY, 3);
+                        break;
+                    case 1:
+                        productLargerPicture.putExtra(NEW_KEY, 1);
+                        break;
+                    case 2:
+                        productLargerPicture.putExtra(NEW_KEY, 2);
+                        break;
+                    case 4:
+                        productLargerPicture.putExtra(NEW_KEY, 4);
+                        break;
+
+                }
+
                 startActivity(productLargerPicture);
             }
         });
@@ -62,14 +87,6 @@ public class Detailed_Menu extends NavigationDrawerActivity {
 
     @Override
     public void finish() {
-        Log.d(TAG, "finish()");
-        int n = getIntent().getIntExtra(MainActivity.SOME_KEY, -1);
-
-
-        /*Intent ratingResult = new Intent();
-        RatingBar ratingBar = (RatingBar) findViewById(R.id.rating);
-        ratingResult.putExtra("WineRating", ratingBar.getRating());
-        setResult(RESULT_OK, ratingResult);*/
         super.finish();
     }
 

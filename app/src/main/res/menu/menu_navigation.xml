@@ -3,18 +3,16 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/categories"
-            android:title="Categories" />
+            android:title="@string/category" />
         <item
             android:id="@+id/favs"
-            android:title="Favourites" />
+            android:title="@string/favorites" />
         <item
             android:id="@+id/scart"
-            android:title="Shopping Cart" />
-        <item
-            android:id="@+id/about"
-            android:title="About Us" />
+            android:title="@string/shopping_cart" />
+
         <item
             android:id="@+id/location"
-            android:title="Our Location" />
+            android:title="@string/our_location" />
     </group>
 </menu>

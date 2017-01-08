@@ -3,6 +3,7 @@ package com.example.android.privatesun2;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -14,7 +15,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
-import android.widget.Toast;
+import android.widget.TextView;
+
 
 public class NavigationDrawerActivity extends AppCompatActivity {
     private DrawerLayout drawerLayout;
@@ -33,8 +35,14 @@ public class NavigationDrawerActivity extends AppCompatActivity {
         getLayoutInflater().inflate(layoutResID, activityContainer, true);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitleTextColor(Color.BLACK);
         setSupportActionBar(toolbar);
+        TextView myTitle = (TextView) toolbar.getChildAt(0);
+        Typeface myCustomFont = Typeface.createFromAsset(getAssets(), "fonts/HarabaraHand.ttf");
+        myTitle.setTypeface(myCustomFont);
+        toolbar.setTitleTextColor(Color.BLACK);
+        toolbar.setBackgroundColor(0X000000);
+
+
         initNavigationDrawer();
 
     }
@@ -49,11 +57,16 @@ public class NavigationDrawerActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.menu_cart) {
-            //Create Intent for Shopping Cart Activity
             Intent productIntent = new Intent(this, ShoppingCart.class);
             startActivity(productIntent);
             return true;
         }
+        if (id == R.id.menu_heart) {
+            Intent favsIntent = new Intent(NavigationDrawerActivity.this, FavouritesList.class);
+            startActivity(favsIntent);
+            return true;
+        }
+
         return super.onOptionsItemSelected(item);
     }
 
@@ -70,20 +83,16 @@ public class NavigationDrawerActivity extends AppCompatActivity {
                     case R.id.categories:
                         Intent intent = new Intent(NavigationDrawerActivity.this, MainActivity.class);
                         startActivity(intent);
-                        Toast.makeText(getApplicationContext(), "Shop", Toast.LENGTH_SHORT).show();
                         drawerLayout.closeDrawers();
                         break;
                     case R.id.favs:
-                        Toast.makeText(getApplicationContext(), "Favourites", Toast.LENGTH_SHORT).show();
+                        Intent favsIntent = new Intent(NavigationDrawerActivity.this, FavouritesList.class);
+                        startActivity(favsIntent);
+                        drawerLayout.closeDrawers();
                         break;
                     case R.id.scart:
                         Intent productIntent = new Intent(NavigationDrawerActivity.this, ShoppingCart.class);
                         startActivity(productIntent);
-                        Toast.makeText(getApplicationContext(), "Shopping Cart", Toast.LENGTH_SHORT).show();
-                        break;
-                    case R.id.about:
-                        Toast.makeText(getApplicationContext(), "About Us", Toast.LENGTH_SHORT).show();
-                        drawerLayout.closeDrawers();
                         break;
                     case R.id.location:
                         double latitude = 41.939633;

@@ -18,27 +18,16 @@
         android:orientation="horizontal"
         android:paddingTop="16dp">
 
-        <TextView
+        <customfonts.MyTextView
             android:id="@+id/order1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#fff"
             android:gravity="center"
             android:padding="16dp"
-            android:text="Order"
+            android:text="@string/order"
             android:textColor="#333333"
             android:textSize="22dp" />
-
-        <LinearLayout
-            android:layout_width="45dp"
-            android:layout_height="58dp">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent" />/ android:src="@drawable/arrow"
-            android:paddingLeft="16dp"
-            />
-        </LinearLayout>
 
 
         <LinearLayout
@@ -48,13 +37,21 @@
             android:paddingRight="8dp"
             android:paddingTop="12dp">
 
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="$"
+    android:padding="8dp"
+    android:textSize="18dp"/>
+
             <TextView
                 android:id="@+id/payTotal"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:background="@drawable/rect"
                 android:padding="8dp"
-                android:text="Pay $150"
+                android:paddingRight="20dp"
+                android:text="150"
                 android:textColor="#fff"
                 android:textSize="18dp" />
 
@@ -90,6 +87,21 @@
                 android:padding="16dp"
                 android:paddingTop="12dp">
 
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PAY ONLINE"
+                    android:onClick="payOnline"
+                    android:background="@color/blue"
+                    android:id="@+id/button" />
+
+                <customfonts.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:text="If you are paying with cash,please, fill in the form below and we will send you an email check."/>
+
 
                 <!--****NAME TEXT****-->
 
@@ -105,7 +117,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="2.5"
-                        android:text="YOUR NAME"
+                        android:text="@string/name"
                         android:textColor="#333333" />
 
                     <TextView
@@ -113,7 +125,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Your first and last name"
+                        android:text="@string/full_name"
                         android:textColor="#c3c3c3" />
                 </LinearLayout>
 
@@ -141,6 +153,7 @@
                             android:background="#00000000"
                             android:maxLines="1"
                             android:padding="7dp"
+                            android:inputType="textAutoCorrect"
                             android:textColorHint="#333333" />
 
 
@@ -161,6 +174,66 @@
                             android:background="#00000000"
                             android:maxLines="1"
                             android:padding="7dp"
+                            android:inputType="textAutoCorrect"
+                            android:textColorHint="#333333" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--****EMAIL****-->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="12dp">
+
+                        <TextView
+                            android:id="@+id/email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5.5"
+                            android:text="E-MAIL"
+                            android:textColor="#333333" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <!--****ADDRESS LINE 1 FIELD****-->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:orientation="vertical"
+
+                        >
+
+                        <EditText
+                            android:id="@+id/email2"
+                            android:layout_width="match_parent"
+                            android:layout_height="33.5dp"
+                            android:background="#00000000"
+                            android:maxLines="1"
+                            android:padding="7dp"
+                            android:inputType="textEmailAddress"
                             android:textColorHint="#333333" />
 
 
@@ -188,7 +261,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="5.5"
-                            android:text="ADDRESS LINE 1"
+                            android:text="@string/adr1"
                             android:textColor="#333333" />
 
 
@@ -220,6 +293,7 @@
                             android:background="#00000000"
                             android:maxLines="1"
                             android:padding="7dp"
+                            android:inputType="textAutoCorrect"
                             android:textColorHint="#333333" />
 
 
@@ -247,7 +321,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="5.5"
-                            android:text="ADDRESS LINE 2"
+                            android:text="@string/adr2"
                             android:textColor="#333333" />
 
 
@@ -279,6 +353,7 @@
                             android:background="#00000000"
                             android:maxLines="1"
                             android:padding="7dp"
+                            android:inputType="textAutoCorrect"
                             android:textColorHint="#333333" />
 
 
@@ -300,7 +375,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="CITY"
+                        android:text="@string/city"
                         android:textColor="#333333" />
 
                     <TextView
@@ -308,7 +383,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1.1"
-                        android:text="STATE"
+                        android:text="@string/state"
                         android:textColor="#333333" />
                 </LinearLayout>
 
@@ -336,6 +411,7 @@
                             android:background="#00000000"
                             android:maxLines="1"
                             android:padding="7dp"
+                            android:inputType="textAutoCorrect"
                             android:textColorHint="#333333" />
 
 
@@ -356,6 +432,7 @@
                             android:background="#00000000"
                             android:maxLines="1"
                             android:padding="7dp"
+                            android:inputType="textAutoCorrect"
                             android:textColorHint="#333333" />
 
 
@@ -378,7 +455,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:inputType="number"
-                        android:text="ZIP CODE"
+                        android:text="@string/zip"
                         android:textColor="#333333" />
 
                     <TextView
@@ -386,7 +463,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1.1"
-                        android:text="COUNTRY"
+                        android:text="@string/country"
                         android:textColor="#333333" />
                 </LinearLayout>
 
@@ -436,6 +513,7 @@
                             android:background="#00000000"
                             android:maxLines="1"
                             android:padding="7dp"
+                            android:inputType="textAutoCorrect"
                             android:textColorHint="#333333" />
 
 
@@ -462,7 +540,7 @@
                             android:id="@+id/comment1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="COMMENT"
+                            android:text="@string/comment"
                             android:textColor="#333333" />
 
 
@@ -520,10 +598,10 @@
         android:layout_alignParentBottom="true"
         android:background="@color/colorButton"
         android:gravity="center"
-        android:padding="16dp"
-        android:text="Submit Order"
+        android:padding="12dp"
+        android:text="@string/submit"
         android:textColor="#fff"
-        android:textSize="20dp" />
+        android:textSize="18dp" />
 
 </RelativeLayout>
 

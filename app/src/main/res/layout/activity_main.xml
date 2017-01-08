@@ -23,7 +23,7 @@
 
             <ImageView
 
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:background="#F5F6F8"
                 android:onClick="openGridView1"
@@ -40,7 +40,7 @@
                 android:gravity="left"
                 android:paddingLeft="40dp"
                 android:paddingTop="80dp"
-                android:text="Outwear"
+                android:text="@string/outwear"
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
@@ -54,7 +54,7 @@
             android:paddingTop="5dp">
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:background="#F5F6F8"
                 android:onClick="openGridView2"
@@ -71,9 +71,10 @@
                 android:gravity="left"
                 android:paddingLeft="40dp"
                 android:paddingTop="80dp"
-                android:text="Dresses"
+                android:text="@string/dresses"
                 android:textSize="30sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:id="@+id/myTextView" />
 
 
         </FrameLayout>
@@ -86,7 +87,7 @@
 
             <ImageView
 
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:background="#F5F6F8"
                 android:onClick="openGridView3"
@@ -103,11 +104,9 @@
                 android:gravity="left"
                 android:paddingLeft="40dp"
                 android:paddingTop="80dp"
-                android:text="Tops"
+                android:text="@string/tops"
                 android:textSize="30sp"
                 android:textStyle="bold" />
-
-
 
 
         </FrameLayout>
@@ -119,7 +118,7 @@
             android:paddingTop="5dp">
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:background="#8F8B8A"
                 android:onClick="openGridView4"
@@ -135,11 +134,9 @@
                 android:gravity="left"
                 android:paddingLeft="40dp"
                 android:paddingTop="80dp"
-                android:text="Bottoms"
+                android:text="@string/bottoms"
                 android:textSize="30sp"
                 android:textStyle="bold" />
-
-
 
 
         </FrameLayout>

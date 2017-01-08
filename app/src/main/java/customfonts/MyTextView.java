@@ -13,6 +13,7 @@ public class MyTextView extends TextView {
     public MyTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
         this.setTypeface(Typeface.createFromAsset(context.getAssets(), "fonts/DroidSerif-Regular.ttf"));
+
     }
 
 
