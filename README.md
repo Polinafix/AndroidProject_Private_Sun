@@ -30,14 +30,14 @@ Besides the total amount and shipping address the letter should also contain a l
 The first page that the user sees. Contains Categories of clothes.
 Clicking on any of the categories will take the user to a corresponding detailed catalog. The page is scrollable. The Toolbar at the top of the screen is consistent across several activities of the app and allows the user quickly navigate to the shopping cart and list of favorites, as well as open the Navigation Drawer.
 
-![img1](http://i.imgur.com/XzEF1ff.png)
+![img1](http://i.imgur.com/uXfyLGE.png)
 
 ##### 2. Navigation Drawer Menu
 Opens up if the user makes a left swipe or clicks on a hamburger icon on the Toolbar.
 Contains the navigation menu. Clicking on each of the menu items takes the user to the corresponding page/activity.
 Is consistent across several activities of the app.
 
-![img2](http://i.imgur.com/lOpQCQI.png)
+![img2](http://i.imgur.com/jzXwxY2.png)
 
 ##### 3. Grid View of Items in each Category
 Shows a detailed menu of items from a certain category.
@@ -45,7 +45,7 @@ Implemented as a gallery of clothes items with a picture, name and price.
 Clicking on each of the items takes the user to the next Activity with a detailed description.
 The page is scrollable.
 
-![img3](http://i.imgur.com/0iXJUxJ.png)
+![img3](http://i.imgur.com/8asjhv2.png)
 
 ##### 4. Detailed View of  the Item
 Shows the details of the particular clothes item, such as a large picture and description.
@@ -55,7 +55,7 @@ If the item is already in the cart, the button becomes disabled.
 If user forgets to choose the size, the corresponding message will pop up.
 The page is scrollable.
 
-![img4](http://i.imgur.com/JR7EcwT.png) ![img5](http://i.imgur.com/n1DPe1g.png)
+![img4](http://i.imgur.com/mPzmO7M.png) ![img5](http://i.imgur.com/TcFkOfP.png)
 
 ##### 5. Shopping Cart
 Shows the list of items chosen by the user.
@@ -63,50 +63,49 @@ To remove the item from the shopping cart, user needs to tap on it and click on 
 Clicking on the “Proceed to Checkout” button will take the user to the Payment activity.
 The page is scrollable.
 
-![img6](http://i.imgur.com/JWpAvO1.png)
+![img6](http://i.imgur.com/ISwg6T7.png)
 
 ##### 6. Proceeding with Payment
 In this activity the user can see the total price and choose to pay either online or with cash.
 Clicking on “Pay Online” takes the user to the PayPal payment activity.
 The page is scrollable.
 
-![img7](http://i.imgur.com/MD2BDc0.png)
+![img7](http://i.imgur.com/GBAm4QH.png)
 
 ##### 7. Paying with PayPal
 PayPal payment activity.
 
-![img8](http://i.imgur.com/nN9go9f.png)
+![img8](http://i.imgur.com/dZTvnjA.png)
 
 ##### 8. Confirmation of Online Payment
 When the payment is successfully made, the user sees this screen with the confirmation.
 
-![img9](http://i.imgur.com/Q7hUT6L.png)
+![img9](http://i.imgur.com/BmlsdAG.png)
 
 ##### 9. Payment with Cash
 If the user decides to pay with cash, he would need to first fill in the personal information. Clicking on “Pay with Cash” will take the user to the email page with the predefined text, containing total amount and shipping address.
 
-![img10](http://i.imgur.com/eTQDVOq.png)
+![img10](http://i.imgur.com/NJA2bUx.png)
 
 ##### 10. Confirmation Letter
 Letter with a predefined text.
 The feature was not fully implemented.
 
-![img11](http://i.imgur.com/sricFqQ.png)
+![img11](http://i.imgur.com/K2rx8H5.png)
 
 ##### 11. Favorites Page
 The user can either delete the item from the list of favorites or share it.
 
-![img12](http://i.imgur.com/sfU5rJh.png)
+![img12](http://i.imgur.com/2vbIN3F.png)
 
 ##### 12. Option to share Favorites
 Clicking on the “Share” button opens up a window with suggested applications.
 The feature was not fully implemented.
 
-![img13](http://i.imgur.com/8gjsAt9.png)
+![img13](http://i.imgur.com/Jj8RBVj.png)
 ##### 13. Support of Russian language
 If we change the settings language of the phone to Russian, the text of the whole application will be translated.
 
-![img14](http://i.imgur.com/t2PGc1A.png)
 
 
 
